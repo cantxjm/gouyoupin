@@ -120,7 +120,6 @@ export default [
             {
                 path: '/center',
                 redirect: "/center/myorder"
-
             }
         ],
         meta: { show: true }

@@ -77,7 +77,7 @@ export default {
       // 第三种：对象的写法
       // this.$router.push({name:'search',params:{keyword:this.keyword},query:{k:this.keyword.toUpperCase()}})
 
-      // 如何指定params参数可传可不传？
+      // 如何指定params参数可传可不传？在配置路由的时候，在占位后面加上一个问号
       // this.$router.push({name:'search',query:{k:this.keyword.toUpperCase()}})
 
       // params参数可传可不传，但如果是空串，如何解决?

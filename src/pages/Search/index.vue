@@ -186,6 +186,7 @@ export default {
 
     // Object.assign: ES6语法，合并对象
     // this.$route.query和this.$route.params中的值会放到this.searchParams中对应的值
+    console.log(this);
     Object.assign(this.searchParams, this.$route.query, this.$route.params);
   },
   // 组件挂载完毕执行一次【仅仅执行一次】

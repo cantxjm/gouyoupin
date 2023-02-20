@@ -69,7 +69,7 @@ new Vue({
     Vue.prototype.$API = API;
   },
   mounted() {
-    console.log(this);
+    // console.log(this);
   },
   // 注册路由: 底下的写法是KV一致省略V【router小写的】
   // 注册路由信息：当这里书写router的时候，组件身上都拥有$route,$router属性

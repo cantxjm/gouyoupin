@@ -87,6 +87,7 @@ router.beforeEach(async (to, from, next) => {
         // 未登录去上面的这些路由---登录
         let toPath = to.path
         // console.log(toPath);
+        // indexOf 如果未找到则返回-1
         if (toPath.indexOf('/trade') != -1 || toPath.indexOf('/pay') != -1 || toPath.indexOf('/center') != -1) {
             // 把未登录想去而没有去成的信息，存储于地址栏中【路由】
             next('/login?redirect=' + toPath)
@@ -96,7 +97,6 @@ router.beforeEach(async (to, from, next) => {
         }
 
     }
-
 })
 
 export default router
